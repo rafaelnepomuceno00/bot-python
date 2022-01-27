@@ -9,7 +9,7 @@ class InstagramBot:
         self.userName = userName
         self.password = password
         self.driver = webdriver.Firefox(
-            executable_path='/home/rafael/Documentos/geckodriver-v0.28.0-linux64/geckodriver')
+            executable_path='C:/Users/rafae/Downloads/bot-python-main/bot-python-main/geckodriver')
 
     def login(self):
         driver = self.driver
