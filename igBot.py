@@ -35,14 +35,14 @@ class InstagramBot:
 
     def coment(self):
         driver = self.driver
-        driver.get("link do post")
-        time.sleep(4)
+        time.sleep(25)
+        driver.get("https://www.instagram.com/p/CZMn-CgOjyH/?utm_medium=copy_link")
         driver.execute_script('window.scrollTo(0,300);')
 
         for i in range(0, 1000):
             try:
-                coments = ['Quero ganhar!', 'Contando com a sorte', 'Qualquer Coisa', 'Comentando','Vou ganhar', 'Já ganhei!', 'Quero', 'Espero muito ganhar', 'Tentando', 'Não custa nada tentar',
-                           'Quero muito!', 'Espero ganhar!', '$$$', '$','$$','$$$', '$$$$$', '$$$$', '$$$$$$$$$$$$$' '$$$$$$' '$$$$$$$']
+                coments = ['@rafaeln__', '@ni.col.las', '@niicolas_neves', '@minhagaleriaclandestina','@_brendha', '@rafaav_', '@carolcostasr', 'Espero muito ganhar', 'Tentando', 'Não custa nada tentar',
+                           '@tuliojoliveira', '@don.peixon']
                 driver.find_element_by_class_name("Ypffh").click()
                 comentfield = driver.find_element_by_class_name("Ypffh")
                 time.sleep(random.randint(4, 10))
@@ -51,7 +51,7 @@ class InstagramBot:
                 driver.find_element_by_xpath(
                     "//button[contains(text(), 'Post')]").click()
                 time.sleep(random.randint(4, 10))
-                driver.get("link do post")
+                driver.get("https://www.instagram.com/p/CZMn-CgOjyH/?utm_medium=copy_link")
                 time.sleep(random.randint(4, 10))
                 driver.execute_script('window.scrollTo(0,300);')
 
